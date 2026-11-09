@@ -1,3 +1,7 @@
+#use .get when a key might be missing and bracket notation if you know its there
+#It reminds me of excell pivot tables. Python is more usefull for large data sets because it can save time and takes up less space
+
+
 print("--Exercise 1--")
 customer = {
     "name": "Alice",
@@ -81,3 +85,4 @@ for sale in transactions:
     amount = sale['amount']
 sales_by_region[region] = sales_by_region.get(region, 0) + amount
 print(sales_by_region)
+
